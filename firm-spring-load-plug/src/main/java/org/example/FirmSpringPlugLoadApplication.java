@@ -21,8 +21,8 @@ public class FirmSpringPlugLoadApplication {
 
     @PostConstruct
     public void init() throws InvocationTargetException, IllegalAccessException, NoSuchMethodException {
-        FirmPlug firmPluginImpl = SpringUtil.getBean(FirmPlug.class);
-        firmPluginImpl.doPlug();
+        Object firmPluginImpl = SpringUtil.getBean("FirmPluginImpl");
+        firmPluginImpl.getClass().getMethod("doPlug").invoke(firmPluginImpl);
     }
 
 }
