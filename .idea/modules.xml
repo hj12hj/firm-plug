@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/firm-plug.iml" filepath="$PROJECT_DIR$/.idea/firm-plug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firm-plug-Impl/firm-plug-Impl.iml" filepath="$PROJECT_DIR$/firm-plug-Impl/firm-plug-Impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firm-plug-business/firm-plug-business.iml" filepath="$PROJECT_DIR$/firm-plug-business/firm-plug-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firm-plug-common/firm-plug-common.iml" filepath="$PROJECT_DIR$/firm-plug-common/firm-plug-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firm-plug-core/firm-plug-core.iml" filepath="$PROJECT_DIR$/firm-plug-core/firm-plug-core.iml" />
+    </modules>
+  </component>
+</project>
