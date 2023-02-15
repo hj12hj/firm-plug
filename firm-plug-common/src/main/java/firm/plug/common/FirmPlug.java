@@ -1,5 +1,7 @@
 package firm.plug.common;
 
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * @author: hj
  * @date: 2023/2/15
@@ -10,6 +12,6 @@ public interface FirmPlug {
     /**
      * 插件处理逻辑
      */
-    void doPlug();
+    void doPlug() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException;
 
 }

@@ -1,4 +1,4 @@
-package firm.plug.business;
+package firm.plug.business.plugs;
 
 import firm.plug.core.CustomPlugLoader;
 import org.springframework.stereotype.Component;

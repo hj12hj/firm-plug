@@ -1,7 +1,9 @@
 package firm.plug.Impl;
 
+import cn.hutool.extra.spring.SpringUtil;
 import firm.plug.common.FirmPlug;
-import redis.clients.jedis.Jedis;
+
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author: hj
@@ -10,10 +12,10 @@ import redis.clients.jedis.Jedis;
  */
 public class FirmPluginImpl implements FirmPlug {
     @Override
-    public void doPlug() {
-        Jedis jedis = new Jedis("10.55.255.54", 6379);
-        jedis.auth("123456");
-        jedis.set("name", "hj");
-        System.out.println(jedis.get("name"));
+    public void doPlug() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+
+        Object test = SpringUtil.getBean("test");
+        test.getClass().getMethod("test").invoke(test);
+
     }
 }
